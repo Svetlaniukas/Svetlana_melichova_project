@@ -1,0 +1,163 @@
+/* Styles for the Home Page (index.html) */
+
+:root {
+    --primary-color: #6D9B98;
+    --secondary-color: #FFB6B9;
+    --text-color: #333;
+    --hover-color: #003366;
+}
+
+.index_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Blending gradients from both pages */
+    background: linear-gradient(135deg, #6D9B98 50%, #FFB6B9 50%);
+    color: white; /* White text color for good contrast */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section {
+    /* Smooth transition from one shade to another */
+    background: linear-gradient(to right, #6D9B98, #96C7C1);
+}
+
+.index_page h1 {
+    font-size: 3em; /* Header size */
+    margin-bottom: 30px;
+}
+
+.index_page p {
+    font-size: 1.4em; /* Text size */
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Information blocks or cards */
+.index_page .info_card {
+    background-color: rgba(242, 173, 173, 0.452);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.full_width_image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card_layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.info_card {
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info_card img {
+    width: 100%;
+    height: auto;
+}
+
+.info_card h3 {
+    margin: 10px;
+}
+
+.index_page .info_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .index_page {
+        padding: 20px 0;
+    }
+
+    .index_page .info_card {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+/* Additional styles for interactive forms */
+.toggle {
+    display: none;
+}
+
+.toggle + label {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #008099;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle + label:hover {
+    background-color: #003366;
+}
+
+.registration_form {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.toggle:checked + label + .registration_form {
+    display: block;
+}
+.registration_link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004d99; /* Primary button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline from links */
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
+}
+
+.registration_link:hover {
+    background-color: #003366; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.teacher_photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular images */
+    margin-right: 10px;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+/* Optional: Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .registration_link {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    .teacher_photo {
+        width: 40px;
+        height: 40px;
+    }
+}

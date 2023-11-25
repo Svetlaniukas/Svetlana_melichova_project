@@ -1,0 +1,128 @@
+
+Here's a quick breakdown of the structure:
+
+https://github.com/ASMelichov/Model_1/tree/618d37e0c03046c47e6476c67b5b468fbd7de74a/project_html_css
+
+|
+|-- [Header]
+|     |-- Logo/Name
+|     |-- Navigation Menu
+|
+|-- [Main Content]
+|     |-- [Homepage (index.html)]
+|     |     |-- Intro Section
+|     |     |-- Favorite Player Voting
+|     |     |-- Children's Football Info
+|     |     |-- Contact Form
+|     |
+|     |-- [About Us Page (about.html)]
+|     |     |-- Club Description
+|     |     |-- Philosophy & Programs
+|     |     |-- Information Cards
+|     |
+|     |-- [Contact Us Page (contact.html)]
+|           |-- Contact Information
+|           |-- Feedback Form
+|
+|-- [Footer]
+      |-- Copyright
+      |-- External Link
+
+
+Overall Structure of the Website:
+
+Homepage (index.html):
+Header: Club logo/name, Navigation menu (Home, About, Contact Us, GitHub Project).
+Main Content: Introductory section with an image, Favorite Player Voting section, Information about children's football and coaching programs, Contact form.
+Footer: Copyright notice and link to an external website.
+About Us Page (about.html):
+Header: Club name, Navigation menu.
+Main Content: Description of O'Mahony Football Club, Information about the club's philosophy, coaching program, and achievements, Information cards.
+Footer: Copyright notice and link to an external website.
+Contact Us Page (contact.html):
+Header: Club name, Navigation menu.
+Main Content: Contact information section with a feedback form.
+Footer: Copyright notice and link to an external website.
+
+|
+|-- [Header]
+|     |-- Logo/Name (CSS: Header styles in styles.css)
+|     |-- Navigation Menu (CSS: Nav styles in styles.css)
+|
+|-- [Main Content]
+|     |-- [Homepage (index.html)]
+|     |     |-- Intro Section (CSS: .index_page styles in style_static.css)
+|     |     |-- Favorite Player Voting (CSS: .slider styles in style_static.css)
+|     |     |-- Children's Football Info (CSS: .section styles in style_static.css)
+|     |     |-- Contact Form (CSS: Form styles in styles.css)
+|     |
+|     |-- [About Us Page (about.html)]
+|     |     |-- Club Description (CSS: .about-section styles in style_static.css)
+|     |     |-- Philosophy & Programs (CSS: .about-section styles in style_static.css)
+|     |     |-- Information Cards (CSS: .info_card styles in style_static.css)
+|     |
+|     |-- [Contact Us Page (contact.html)]
+|           |-- Contact Information (CSS: .contact_container in style_static.css)
+|           |-- Feedback Form (CSS: .contact_form in style_static.css)
+|
+|-- [Footer]
+      |-- Copyright (CSS: .footer_section in styles.css)
+      |-- External Link (CSS: .footer_section in styles.css)
+
+
+Global Styles (styles.css):
+- Base Styles: Body font, color, background; Default sizes for paragraphs, headings; Link styling.
+- Layout Styles: Container dimensions, margins; Grid/flexbox settings.
+- Header and Footer: Background, padding, layout; Logo and navigation menu styling.
+
+Page Specific Styles (style_static.css):
+- Homepage Styles: Intro section background, typography; Slider, voting section; Match results table styling; Registration links styling.
+- About Page Styles: Specific styles for about section; Information cards styling.
+- Contact Page Styles: Form styling; Layout for contact information.
+
+Responsive Design:
+- Media queries for different screen sizes.
+- Adjustments for navigation, layout, font sizes for mobile view.
+- Image resizing and layout tweaks.
+
+Utility Classes:
+- Common classes for margins, padding, text alignment; Display classes; Color classes.
+
+Interactive Elements:
+- Button hover and active states; Form element focus styles; Animations/transitions.
+
+JavaScript Functionality:
+
+Slider Functionality (script.js):
+Automatically updates the 'displayYear' in the footer to the current year.
+Manages the slider for the Favorite Player Voting section with the ability to navigate through slides and automatic sliding every 5 seconds.
+Adds interactivity to the left and right buttons for manual slide navigation.
+Global Styles (styles.css):
+
+Base Styles: Body font, color, background; Default sizes for paragraphs, headings; Link styling.
+Layout Styles: Container dimensions, margins; Grid/flexbox settings.
+Header and Footer: Background, padding, layout; Logo and navigation menu styling.
+Page Specific Styles (style_static.css):
+
+Homepage Styles: Intro section background, typography; Slider, voting section; Match results table styling; Registration links styling.
+About Page Styles: Specific styles for about section; Information cards styling.
+Contact Page Styles: Form styling; Layout for contact information.
+Responsive Design:
+
+Media queries for different screen sizes.
+Adjustments for navigation, layout, font sizes for mobile view.
+Image resizing and layout tweaks.
+Utility Classes:
+
+Common classes for margins, padding, text alignment; Display classes; Color classes.
+Interactive Elements:
+
+Button hover and active states; Form element focus styles; Animations/transitions.
+<!-- ========== End Section ========== -->
+End ..... Thank You!
+
+
+
+<!-- ========== End Section ========== -->
+
+End ..... Thank You!

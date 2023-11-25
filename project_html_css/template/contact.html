@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - O'Mahony Company LTD</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../static/css/style_static.css">
+</head>
+<body class="contact_page">
+
+    <!-- Шапка сайта -->
+    <header class="header_section">
+        <h1>O'Mahony Football Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="https://github.com/ASMelichov/Model_1/tree/618d37e0c03046c47e6476c67b5b468fbd7de74a/project_html_css" target="_blank">GitHub Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основное содержание страницы -->
+    <main>
+        <section class="contact_container">
+            <h2>Contact O'Mahony Football Club</h2>
+            <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
+            
+            <div class="contact_form">
+                <form action="path-to-your-server-script" method="POST">
+                    <div class="form_group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form_group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form_group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit_button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Футер сайта -->
+    <footer class="footer_section">
+        <p>&copy; <span id="currentYear"></span> O'Mahony Football Club. All Rights Reserved.</p>
+        <a href="http://externalwebsite.com">Visit External Website</a>
+    </footer>
+
+    <script>
+        // Скрипт для отображения текущего года
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

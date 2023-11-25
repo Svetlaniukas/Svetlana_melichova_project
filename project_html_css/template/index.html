@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O'Mahony Company LTD - Football Sports Website">
+    <meta name="keywords" content="Football, Sports, O'Mahony Company">
+    <title>O'Mahony Football - Football Sports</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../static/css/style_static.css">
+</head>
+<body class="index_page">
+    <header class="header_section" role="banner">
+        <img src="../static/img/logo.jpg" alt="O'Mahony Football Club Logo" class="logo">
+
+        <h1>O'Mahony Football Club</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro_section" aria-label="Introduction">
+            <figure>
+                <img src="../static/img/image1.jpg" alt="Stadium" class="full_width_image">
+                <figcaption>Our Home Stadium</figcaption>
+            </figure>
+        </section>
+
+        <section class="favorite_player" aria-label="Favorite Player Voting">
+            <h2>Choose Your Favorite Player</h2>
+            <div class="slider" aria-live="polite">
+                <div class="slide" id="slide-1" role="group" aria-label="Slide 1">
+                    <img src="../static/img/image2.jpg" alt="Player Image 1">
+                </div>
+                <div class="slide" id="slide-2" role="group" aria-label="Slide 2">
+                    <img src="../static/img/image3.jpg" alt="Player Image 2">
+                </div>
+                <div class="slide" id="slide-3" role="group" aria-label="Slide 3">
+                    <img src="../static/img/image4.jpg" alt="Player Image 3">
+                </div>
+                <button class="slider-btn left" aria-label="Previous slide">←</button>
+                <button class="slider-btn right" aria-label="Next slide">→</button>
+            </div>
+            <form>
+                <label for="player-select">Select a player:</label>
+                <select name="player" id="player-select" title="Choose your favorite player">
+                    <option value="player1">Player 1</option>
+                    <option value="player2">Player 2</option>
+                    <option value="player3">Player 3</option>
+                </select>
+                <button type="submit">Vote</button>
+            </form>
+        </section>
+
+        <section class="children_football" aria-label="Children's Football">
+            <h2>Children's Football at O'Mahony Club</h2>
+            <article>
+                <h3>Our Philosophy</h3>
+                <p>We believe in creating a fun, safe, and educational environment for kids.</p>
+            </article>
+            <article>
+                <h3>Training Programs</h3>
+                <p>Our programs cater to children of various age groups.</p>
+            </article>
+        </section>
+
+        <section class="about_section" aria-label="About Us">
+            <div class="card_layout">
+                <div class="info_card" tabindex="0" aria-labelledby="card1title">
+                    <img src="../static/img/image2.jpg" alt="Team Photo">
+                    <h3 id="card1title">Our Team</h3>
+                    <p>Learn more about our players and coaches.</p>
+                </div>
+                <!-- More cards -->
+            </div>
+        </section>
+
+        <section aria-label="Contact Us">
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer_section">
+        <p>&copy; <span id="displayYear"></span> O'Mahony Football Club. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
