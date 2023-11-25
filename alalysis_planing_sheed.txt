@@ -1,0 +1,47 @@
+[O'Mahony Football Club Website Structure]
+1. Planning Analysis Sheet:
+
+Website Goal:
+To provide a comprehensive platform for fans and members of the O'Mahony Football Club to stay informed about club activities, matches, and player development.
+Desired Result: Increase fan engagement and club membership through informative and interactive content.
+Working Titles and Information Needed:
+Homepage: News updates, match schedules, player highlights. Requires current news articles, match calendars, player profiles.
+About Us Page: Club history, coaching philosophy, program details. Requires historical data, coach interviews, program descriptions.
+Contact Us Page: Contact form, club contact details. Requires a functional contact form and updated club contact information.
+List of Sources:
+Club archives for historical information and match reports.
+Media team for updated news, photographs, and video content.
+Coaching staff for program details and philosophy.
+2. Site Map:
+
+A flowchart (storyboard) detailing the hierarchy and links between pages:
+The Homepage links to About Us and Contact Us pages.
+The About Us and Contact Us pages link back to the Homepage.
+3. Wireframe:
+
+A wireframe for the Homepage displaying:
+The placement of the logo, navigation menu.
+Sections for news updates, player voting, children's football info.
+Contact form section.
+Save this wireframe as a .png, .gif, or .jpg file.
+Existing Website Structure:
+
+Header: Contains the logo and navigation menu.
+Main Content: Comprises different pages (Homepage, About Us, Contact Us) with specific content.
+Footer: Includes copyright notice and an external link.
+CSS Structure:
+
+Global Styles (styles.css): Base styles, layout styles, header, and footer styling.
+Page Specific Styles (style_static.css): Unique styles for each page.
+JavaScript Functionality:
+
+Slider Functionality (script.js): Manages the slider on the Homepage and updates the footer's 'displayYear'.
+Responsive Design:
+
+Media Queries: For different screen sizes, layout adjustments, and image resizing.
+Utility Classes:
+
+Commonly used for margins, padding, and text alignment.
+Interactive Elements:
+
+Button hover states, form focus styles, and animations.
